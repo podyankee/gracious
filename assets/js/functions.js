@@ -1,13 +1,53 @@
+$(document).ready(function  () {
+  "use sterict";
+	
+	<!-- bootstrap scrollspy -->
+		
+	$('body').scrollspy({
+		target: '.navbar',
+		offset: 160
+	});
+	
+	 /* ============================= 
+               SKILLBAR 
+    ================================ */
+	
+	 var skillBarTopPosition = $('.skillbar').position().top;
+    $(document).scroll(function() {
+        var scrolled_value = $(document).scrollTop().valueOf();
+        if(scrolled_value > skillBarTopPosition - 250) {
+            startAnimation();
+        }
+    });
+    function startAnimation() {
+        $('.skillbar').each(function() {
+            $(this).find('.skillbar-bar').animate({
+                width: $(this).attr('data-percent')
+            }, 6000);
+        });
+    };
+	
+});
+
+
+
+
+
+
+
+
 <!-- Navbar -->
 	
-jQuery(window).scroll(function  () {
-  var top = jQuery(document).scrollTop();
-  var batas = jQuery(window).height();
+$(window).scroll(function  () {
+  var top = $(document).scrollTop();
+  var batas = $(window).height();
   
   if (top > batas) {
-	  jQuery('.main-menu').addClass('tiny');
-	  jQuery('.main-menu').css('opacity', '1');
+	  $('.main-menu').addClass('tiny');
+	  $('.main-menu').css('opacity', '1');
   } else {
-	  jQuery('.main-menu').removeClass('tiny');
+	  $('.main-menu').removeClass('tiny');
   }
 });
+
+
