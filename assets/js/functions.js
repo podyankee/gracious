@@ -27,10 +27,41 @@ $(document).ready(function  () {
         });
     };
 	
+	/* ============================= 
+               PORTFOLIO SECTION
+    ================================ */
+	
+	$('#portfolio a').nivoLightbox({
+		effect: 'fadeScale'
+	});
+	
 });
 
 
 
+
+    /* ============================= 
+               FANCYBOX 
+    ================================ */
+    $('.youtube-media').on('click', function(event) {
+        
+        var windowWidth = $(window).width();
+        
+        if(windowWidth <= 410) {
+            return;
+        }
+        
+        $.fancybox({
+            href: this.href,
+            padding: 4,
+            type: 'iframe',
+            'href': this.href.replace(new RegExp('watch\\?v=', 'i'), 'v/'),
+        });
+        
+        return false;
+    });
+
+    
 
 
 

@@ -1,0 +1,126 @@
+#portfolio
+	background: #fff
+	text-align: center
+	clear: both
+	top: 50px
+
+#portfolio
+	h2
+		margin-bottom: 48px
+
+	h4
+		padding-bottom: 5px
+
+.grid-container
+	
+	.gridItem
+		padding-left: 1px
+		padding-right: 1px
+		margin-bottom: 2px
+
+.grid-container
+	position: relative
+	margin: 0 auto
+	list-style: none
+	text-align: center
+	overflow: hidden
+	figure
+		position: relative
+		overflow: hidden
+		max-height: 350px
+		width: 100%
+		background: #28282d
+		text-align: center
+		cursor: pointer
+		margin: 0 auto
+		img
+			position: relative
+			display: block
+			min-height: 100%
+			max-width: 100%
+			opacity: 0.8
+		figcaption
+			color: #fff
+			text-transform: uppercase
+			backface-visibility: hidden
+			&::before, &::after
+				pointer-events: none
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			> a
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				z-index: 1000
+				text-indent: 200%
+				white-space: nowrap
+				font-size: 0
+				opacity: 0
+		h2
+			word-spacing: -0.15em
+			font-weight: 300
+			margin: 0
+			
+			span
+				font-weight: 800
+			
+    p
+      margin: 0
+/* Common style
+
+/* Anchor will cover the whole item by default
+/* For some effects it will show as a button
+
+/* Individual effects
+
+/*---------------
+/***** Lily ****
+/*---------------
+
+figure.effect-lily
+	img
+		max-width: none
+		width: -webkit-calc(100% + 50px)
+		width: calc(100% + 50px)
+		opacity: 0.7
+		transition: opacity 0.35s, transform 0.35s
+		transform: translate3d(-40px, 0, 0)
+	figcaption
+		text-align: left
+		> div
+			position: absolute
+			bottom: 30px
+			left: 0
+			padding: 15px
+			width: 100%
+	h2, p
+		transform: translate3d(0, 30px, 0)
+	h2
+		transition: transform 0.35s
+	p
+		color: rgba(255, 255, 255, 0.8)
+		opacity: 0
+		transition: opacity 0.2s, transform 0.35s
+	&:hover
+		img, p
+			opacity: 1
+		img, h2
+			transform: translate3d(0, 0, 0)
+		p
+			transform: translate3d(0, 0, 0)
+			transition-delay: 0.05s
+			transition-duration: 0.35s
+
+figure.effect-lily
+	
+	h4
+		color: #fff
+		text-transform: none
+
+.nivo-lightbox-title
+	display: none

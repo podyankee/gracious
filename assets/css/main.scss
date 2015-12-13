@@ -4,9 +4,12 @@
 @import "0-tools/fonts";
 @import "0-tools/animate";
 @import "0-tools/ionicons.min";
+@import "0-tools/jquery.fancybox";
 @import "0-tools/libs/bootstrap/css/bootstrap.min";
 //@import "0-tools/libs/bootstrap/css/bootstrap_skin";
 @import "0-tools/libs/font-awesome/css/font-awesome.min";
+@import "0-tools/nivo-lightbox";
+@import "0-tools/nivo-default/default";
 @import "0-tools/libs/hover";
 
 @import "1-base/vars";
@@ -17,6 +20,10 @@
 @import "3-sections/header";
 @import "3-sections/navbar";
 @import "3-sections/section-about";
+@import "3-sections/section-features";
+@import "3-sections/section-services";
+@import "3-sections/section-video";
+@import "3-sections/section-portfolio";
 @import "3-sections/footer";
 
 
