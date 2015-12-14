@@ -1,0 +1,66 @@
+#team
+	background: #fff
+	position: relative
+	overflow: hidden
+
+	.container
+		position: relative
+		z-index: 1
+
+	h5
+		padding-bottom: 5px
+
+.team-item
+	max-width: 300px
+	margin: auto
+
+	img
+		transform: scale(1.1,1.1)
+		transition: all .4s ease-in-out
+
+	&:hover img
+		transform: scale(1,1)
+		filter: alpha(opacity=80)
+		opacity: 0.8
+
+.teamwrapper
+	position: relative
+	overflow: hidden
+	background: #000
+
+.team-owerlay
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+
+.team-inner
+	padding: 50px 15px
+	position: absolute
+	bottom: 0
+	right: 0
+	left: 0
+	transition: all .3s ease-in-out
+
+	h4
+		position: relative
+		color: #fff
+		margin: 0
+		text-align: right
+		text-transform: none
+
+		strong
+			width: 100%
+			display: inline-block
+
+		span
+			font-size: 11px
+			font-weight: 400
+			display: block
+			margin-top: 5px
+
+.owl-pagination
+	margin-top: 48px

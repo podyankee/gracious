@@ -35,6 +35,21 @@ $(document).ready(function  () {
 		effect: 'fadeScale'
 	});
 	
+	
+	/* ============================= 
+               OWL_CAROUSEL TEAM 
+    ================================ */
+    $('#owl-carousel-team').owlCarousel({
+        items: 4,
+        itemsDesktop: [1199, 3],
+        itemsDesktopSmall: [979, 3],
+        pagination: true,
+        paginationNumbers: false,
+        responsive: true,
+        responsiveRefreshRate: 200,
+        responsiveBaseWidth: window
+    });
+	
 });
 
 

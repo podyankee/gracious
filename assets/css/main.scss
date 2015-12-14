@@ -8,6 +8,9 @@
 @import "0-tools/libs/bootstrap/css/bootstrap.min";
 //@import "0-tools/libs/bootstrap/css/bootstrap_skin";
 @import "0-tools/libs/font-awesome/css/font-awesome.min";
+@import "0-tools/libs/owl/owl.carousel";
+@import "0-tools/libs/owl/owl.theme";
+@import "0-tools/libs/owl/owl.transitions";
 @import "0-tools/nivo-lightbox";
 @import "0-tools/nivo-default/default";
 @import "0-tools/libs/hover";
@@ -24,6 +27,7 @@
 @import "3-sections/section-services";
 @import "3-sections/section-video";
 @import "3-sections/section-portfolio";
+@import "3-sections/section-team";
 @import "3-sections/footer";
 
 
